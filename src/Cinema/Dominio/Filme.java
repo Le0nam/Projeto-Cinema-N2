@@ -4,6 +4,7 @@ public class Filme extends BaseIdentificador{
     private String titulo;
     private int duracao;
     private String genero;
+    private int codigoIngresso;
     public String getTitulo() {
         return titulo;
     }
@@ -22,17 +23,23 @@ public class Filme extends BaseIdentificador{
     public void setGenero(String genero) {
         this.genero = genero;
     }
-    public Filme(int codigo, String titulo, int duracao, String genero) {
+    public int getCodigoIngresso() {
+        return codigoIngresso;
+    }
+    public void setCodigoIngresso(int codigoIngresso) {
+        this.codigoIngresso = codigoIngresso;
+    }
+    public Filme(int codigo, String titulo, int duracao, String genero, int codigoIngresso) {
         super(codigo);
         this.titulo = titulo;
         this.duracao = duracao;
         this.genero = genero;
+        this.codigoIngresso = codigoIngresso;
     }
     @Override
     public String toString() {
-        return "Filme [codigo=" + codigo + " titulo=" + titulo + ", duracao=" + duracao + ", genero=" + genero + "]";
+        return "Filme [codigo=" + codigo + " titulo=" + titulo + ", duracao=" + duracao + ", genero=" + genero + ", codigoIngresso="
+                + codigoIngresso + "]";
     }
-
-    
     
 }

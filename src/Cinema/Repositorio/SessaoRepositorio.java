@@ -35,7 +35,7 @@ public SessaoRepositorio()
        }else
        alteracao.setData(instancia.getData());
        alteracao.setHorario(instancia.getHorario());
-       alteracao.setStatusDaSecao(instancia.getStatusDaSecao());
+       alteracao.setStatusDaSessao(instancia.getStatusDaSessao());
        return alteracao;
     }
 
